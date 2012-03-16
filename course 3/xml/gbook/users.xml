@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+  <USER>
+    <name>Vasya</name>
+    <email>vasya@pupkin.com</email>
+    <msg>Привет Петя</msg>
+    <ip>127.0.0.1</ip>
+    <dt>1318929465</dt>
+  </USER>
+  <USER>
+    <name>John Smith</name>
+    <email>JS@rambler.ru</email>
+    <msg>Hello World</msg>
+    <ip>127.0.0.1</ip>
+    <dt>1318929521</dt>
+  </USER>
+  <USER>
+    <name>ertertert</name>
+    <email>qwe@qwe.ru</email>
+    <msg>dfadfasdfasdf</msg>
+    <ip>127.0.0.1</ip>
+    <dt>1318930002</dt>
+  </USER>
+</users>
