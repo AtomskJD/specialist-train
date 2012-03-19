@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+	
+	<book>
+		<author>Алекс Гомер</author>
+		<title id="1">XML и IE9</title>
+		<pubyear>2000</pubyear>	
+		<price>200</price>
+	</book>
+	
+	<book>
+		<author>Алекс Хоумер</author>
+		<title id="2">Dimanic HTML</title>
+		<pubyear>2004</pubyear>
+		<price>120</price>
+	</book>
+	
+	<book>
+		<author>Алексей Валиков</author>
+		<title id="3">Технология XSLT</title>
+		<pubyear>2006</pubyear>
+		<price>150</price>
+	</book>
+
+	<book>
+		<author>Стивен Холзнер</author>
+		<title id="4">XSLT</title>
+		<pubyear>2005</pubyear>
+		<price>170</price>
+	</book>
+
+	<book>
+		<author>Михаил Масленников</author>
+		<title id="5">Практическая криптография</title>
+		<pubyear>2009</pubyear>
+		<price>200</price>
+	</book>
+
+	<book>
+		<author>Джерри Хонейкатт</author>
+		<title id="6">Реест Windows XP</title>
+		<pubyear>2007</pubyear>
+		<price>250</price>
+	</book>
+
+	<book>
+		<author>Уолтер Брюс</author>
+		<title id="7">Windows XP. Средства повышения производительности</title>
+		<pubyear>2008</pubyear>
+		<price>250</price>
+	</book>
+	
+	<book>
+		<author>Андрей Попов</author>
+		<title id="8">Windows Script Host для Windows 2000/XP</title>
+		<pubyear>2002</pubyear>
+		<price>220</price>
+	</book>
+	
+	<book>
+		<author>Джон Уокенбах</author>
+		<title>Excel 2002. Библия пользователя</title>
+		<pubyear>2003</pubyear>
+		<price>260</price>
+	</book>
+	
+	<book>
+		<author>Сандра Э. Эдди</author>
+		<title>XML. Справочник</title>
+		<pubyear>2004</pubyear>
+		<price>100</price>
+	</book>
+
+	<book>
+		<author>Майкл Ховард</author>
+		<title>Разработка защищенных Web-приложений на платформе Windows 2000</title>
+		<pubyear>2006</pubyear>
+		<price>250</price>
+	</book>
+	
+	<book>
+		<author>Михаэль Зеебергер-Вайхсельбаум</author>
+		<title>WAP-программирование на языке WML</title>
+		<pubyear>2005</pubyear>
+		<price>150</price>
+	</book>
+	
+</catalog>

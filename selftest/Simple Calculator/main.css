@@ -1,0 +1,80 @@
+/*  
+	Copyright 2008 Kane Neufeld of kneuf media <http://wwww.kneuf-media.com/> or <http://www.kneuf.com/>
+	
+    This file is part of Simple Calculator.
+
+    Simple Calculator is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Simple Calculator is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Simple Calculator.  If not, see <http://www.gnu.org/licenses/>.
+*/
+a:link {
+text-decoration : none;
+color : blue;
+}
+.HelpTerm {
+	font-weight: bolder;
+}
+
+a:hover {
+text-decoration : underline;
+}
+INPUT, SELECT, BODY {
+font-family : Verdana, Arial, Helvetica, sans-serif;
+font-size : 16px;
+}
+.headingDiv {
+font-size : 26px;
+font-weight : bolder;
+}
+.mainTbl {
+margin-right : auto;
+margin-left : auto;
+border : 1px dashed black;
+}
+.mainDiv {
+width : 100%;
+text-align : center;
+}
+.footerDiv {
+font-size : 10px;
+text-align : center;
+width : 100%;
+}
+.mainDiv .footerDiv img {
+border-top-style : none;
+border-right-style : none;
+border-bottom-style : none;
+border-left-style : none;
+}
+.resultDiv {
+margin-right : auto;
+margin-left : auto;
+}
+.subHeadingResult {
+font-weight : bold;
+}
+.subResult {
+width : 35%;
+border : thin dotted #ff0000;
+margin-right : auto;
+margin-left : auto;
+text-align : left;
+}
+.small_number {
+font-size : 10px;
+}
+.Reset {
+text-align : right;
+}
+.Submit {
+text-align: left;
+}

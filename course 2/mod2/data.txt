@@ -1,0 +1,13 @@
+suspicion	подозрение.
+anxiety		тревога
+lethargy	вялость,
+deadlock	тупик, полная остановка
+grinning	ухмыляясь
+pride		гордость
+exagerate	преувеличенный
+tenant 		Арендатор
+deadbolt 	Засов
+new	line
+23:05:03
+23:05:08
+23:05:23
