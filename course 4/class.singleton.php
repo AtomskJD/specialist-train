@@ -1,6 +1,6 @@
 <?php 
 class Configurer{
-    const FILE_NAME = "conf.ini";
+    const FILE_NAME = "C:\SERVER\WebPAGEs\course 4\conf.ini";
     private $_content;
     static private $_instance = null;
 
@@ -24,7 +24,9 @@ class Configurer{
         foreach ($this->_content as $key => $value) {
             $data .= "$key = $value \r\n";
         }
-        file_put_contents(self::FILE_NAME, "HELLO");
+        //оказывается известная бага потоков в деструкторе
+            file_put_contents(self::FILE_NAME, $data);
+            var_dump($data);
     }
     
     public function getProp($name)
@@ -36,8 +38,7 @@ class Configurer{
     {
         if ($this->_content)
         $this->_content[$name] = $prop;
-
     }
 }
-Configurer::getInstance()->setProp("sample2", "Two");
- ?>
+Configurer::getInstance()->setProp("sample2", "two");
+?>
