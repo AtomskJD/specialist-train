@@ -4,7 +4,7 @@ class Config{
 	private $_settings;
 	private $_updated = false;
 	static private $_instance = null;
-    //возможность вызова только из getInstance
+    //РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РІС‹Р·РѕРІР° С‚РѕР»СЊРєРѕ РёР· getInstance
     private function __construct(){
     	if(file_exists(self::CONFIG_NAME)){
       		$this->_settings = parse_ini_file(self::CONFIG_NAME);
@@ -22,7 +22,7 @@ class Config{
     	}
         fclose($fp);
     }
-    private function __clone(){} // запрещаем клонирование
+    private function __clone(){} // Р·Р°РїСЂРµС‰Р°РµРј РєР»РѕРЅРёСЂРѕРІР°РЅРёРµ
     static function getInstance(){
         if(self::$_instance == null){
             self::$_instance = new Config();
