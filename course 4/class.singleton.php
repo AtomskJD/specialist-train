@@ -11,8 +11,7 @@ class Configurer{
         }else echo "FILE_NOT_FOUND";     
     }
     static function getInstance()
-    {
-        if(self::$_instance == null){
+    {        if(self::$_instance == null){
             self::$_instance = new Configurer();
         }
         return self::$_instance;
