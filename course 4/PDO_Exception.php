@@ -1,7 +1,7 @@
 <?php 
 class User {
     public $id, $email, $name;
-    function nameToApper()
+    function nameToApper() 
     {
         return strToUpper($this->name);
     }
