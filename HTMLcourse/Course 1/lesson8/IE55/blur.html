@@ -1,0 +1,33 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Blur Filter</title>
+
+<style type="text/css">
+	.myDiv {
+		display:inline;
+		width: 200px;
+		height: 150px;
+		padding: 10px;
+		margin: 10px;
+		font-weight: bold;
+		font-size: 16pt;
+		border: 1px solid gray;
+	}
+	#d1 {filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='10')}
+	#d2 {filter:progid:DXImageTransform.Microsoft.Blur(MakeShadow='true', ShadowOpacity='0.8')}
+</style>
+
+</head>
+
+<body>
+<h1>Blur Filter</h1>
+
+<div id="d0" class="myDiv">Без фильтра</div>
+<div id="d1" class="myDiv">Фильтр BLUR</div>
+<div id="d2" class="myDiv">Фильтр BLUR</div>
+
+</body>
+
+</html>

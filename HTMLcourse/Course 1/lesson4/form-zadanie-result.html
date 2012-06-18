@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Регистрация</title>
+</head>
+<body bgcolor="#FFFFFF">
+	<form action="registration.php" enctype="text/plain" method="post">
+	<table border="1" bgcolor="#DDDDDD" width="600">
+		<tr>
+			<td>Фамилия
+			</td>
+			<td>
+				<input type="login" size="20" maxlength="25"name="login">
+			</td>
+		</tr>
+				<tr>
+			<td>E-mail
+			</td>
+			<td>
+				<input type="login" size="20" maxlength="25"name="mail">
+			</td>
+		</tr>
+		<tr>
+			<td>Пароль
+			</td>
+			<td>
+				<input type="password" size="20" maxlength="25"name="pass1">
+			</td>
+		</tr>
+		<tr>
+			<td>Округ Москвы
+			</td>
+			<td>
+				<select name="okrug" size="1">
+					<option value="c">центральный</option><br>
+					<option value="s">южный</option><br>
+					<option value="sw">юго-западный</option><br>
+					<option value="w">западный</option><br>
+					<option value="nw">северо-западный</option><br>
+					<option value="n">северный</option><br>
+					<option value="ne">северо-восточный</option><br>
+					<option value="e">восточный</option><br>
+					<option value="se">юго-восточный</option>
+			</td>
+		</tr>
+		<tr>
+			<td>Пол
+			</td>
+			<td>
+				<input type="radio" name="sex" value="m">М
+				<input type="radio" name="sex" value="f">Ж
+			</td>
+		</tr>
+		<tr>
+			<td>Ваши интересы
+			</td>
+			<td>
+				<input type="checkbox" name="pc">Компьютеры<br>
+				<input type="checkbox" name="aut">Автомобили<br>
+				<input type="checkbox" name="spt">Спорт<br>
+				<input type="checkbox" name="fsh">Живопись<br>
+				<input type="checkbox" name="kin">Музыка, Театры, Кино<br>
+				<input type="checkbox" name="bks">Книги<br>
+				<input type="checkbox" name="phy">Философия<br>
+				<input type="checkbox" name="rel">Религия<br>
+				<input type="checkbox" name="psy">Психология<br>
+			</td>
+		</tr>
+		<tr>
+			<td>Какие сайты Вы посещали в последнее время чаще
+			</td>
+			<td>
+				<input type="checkbox" name="news">Новостные<br>
+				<input type="checkbox" name="humor">Юморные<br>
+				<input type="checkbox" name="tema">Тематические<br>
+				<input type="checkbox" name="ero">Эротические<br>
+				<input type="checkbox" name="mus">Музыкальные<br>
+			</td>
+		</tr>
+		<tr>
+			<td>Несколько слов о себе
+			</td>
+			<td>
+				<textarea name="description" cols="50" rows="10"></textarea>
+			</td>
+		</tr>
+				<tr>
+			<td colspan="2" align="center">
+				<input type="submit" value="Отправить"> <input type="reset" value="Очистить">
+			</td>
+		</tr>
+
+	</table>
+	</form>
+</body>
+</head>

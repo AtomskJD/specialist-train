@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Shadow Filter</title>
+<style type="text/css">
+	#myDiv {
+		position: absolute;
+		top: 200px;
+		left: 200px;
+		width: 200px;
+		height: 80px;
+		border: 1px solid gray;
+		font-family: Verdana;
+		font-size: 12pt;
+		font-weight: bold;
+		padding: 20px;
+		text-align: center;
+		filter:progid:DXImageTransform.Microsoft.Shadow
+			(color='#666666', Direction=135, Strength=15);
+		background-color: #dddddd;
+	}
+</style>
+
+<script type="text/javascript">
+	// Заполним страницу текстом
+	window.onload = fillText;
+	function fillText() {
+		for (var i=0; i < 20; i++) {
+			document.body.innerHTML += "Shadow Filter creates a solid silhouette of the content of the object, offset in the specified direction. This creates the illusion of a shadow.";
+		}
+	}
+
+</script>
+
+</head>
+
+<body>
+<h1>Shadow Filter</h1>
+
+
+<div id="myDiv">Shadow Filter</div>
+
+
+
+</body>
+
+</html>

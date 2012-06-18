@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Gradient Filter</title>
+
+<style type="text/css">
+	.myDiv {
+		position:absolute; 
+		width:240px; 
+		height:160px; 
+		padding:10px; 
+		font: bold 11pt verdana;
+	}
+	
+	#d1 {
+		filter:progid:DXImageTransform.Microsoft.Gradient
+			(GradientType=0, StartColorStr='#FF0000FF', EndColorStr='#000000');
+		top:50px; 
+		left:10px; 
+	}
+	
+	#d2 {
+		filter:progid:DXImageTransform.Microsoft.Gradient
+			(GradientType=1, StartColorStr='#FF0000FF', EndColorStr='#20000000');
+		top:50px; 
+		left:310px; 
+	}
+
+</style>
+
+</head>
+
+<body>
+	<h1>Gradient Filter</h1>
+	<div id="d1" class="myDiv">Пример фильтра</div>
+	<div id="d2" class="myDiv">Пример фильтра</div>
+</body>
+
+</html>

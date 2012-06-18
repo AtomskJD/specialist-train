@@ -46,7 +46,7 @@ class ExtFactory {
 
 $list = array('image.jpg', 'image.jpg', 'image.jpg', "set.ini", "my.txt",
  "briliant.png");
-$ExtFactory = new ExtFactory($list);
+$ExtFactory = new ExtFactory();
 foreach ($list as $name) {
     echo $name ." \tрасширение ". $ExtFactory->getFactory($name)->getExt() ."<br>\r\n";
 }

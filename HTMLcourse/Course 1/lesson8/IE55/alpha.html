@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Alpha Filter</title>
+
+<style type="text/css">
+	.myDiv {
+		display: inline; 
+		margin: 10px;
+		width:240px; 
+		height:160px; 
+		padding:10px; 
+		font:bold 13pt verdana; 
+		background:green;
+	}
+	
+	#d1 {
+		filter:progid:DXImageTransform.Microsoft.Alpha
+			(Opacity=100, FinishOpacity=0, Style=1, StartX=30,  
+			FinishX=100, StartY=30, FinishY=100);
+	}
+	
+	#d2 {
+		filter:progid:DXImageTransform.Microsoft.Alpha
+			(Opacity=100, FinishOpacity=10, Style=2);
+	}
+	
+	#d3 {
+		filter:progid:DXImageTransform.Microsoft.Alpha
+			(Opacity=100, FinishOpacity=0, Style=3);
+		
+	}
+</style>
+
+</head>
+
+<body>
+
+<h1>Alpha Filter</h1>
+
+<div id="d1" class="myDiv">Слой D1</div>
+<div id="d2" class="myDiv">Слой D2</div>
+<div id="d3" class="myDiv">Слой D3</div>
+
+</body>
+
+</html>

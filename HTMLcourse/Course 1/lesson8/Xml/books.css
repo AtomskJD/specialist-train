@@ -1,0 +1,18 @@
+pricelist {
+	display: block;
+}
+book {
+	display: block;
+	border: 1px solid black;
+	margin: 2px;
+}
+title, author, price {
+	display: inline;
+	padding-left: 8px;
+}
+title {
+	font-weight: bold;
+}
+price {
+	color: red;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns:mshelp="http://msdn.microsoft.com/msHelp">
+
+<head>
+<title>Compositor Filter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<style>.teststyle1 {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-SIZE: 72pt; LEFT: 30px; MARGIN-BOTTOM: 20px; BORDER-LEFT: medium none; WIDTH: 400px; COLOR: yellow; PADDING-TOP: 15px; BORDER-BOTTOM: medium none; HEIGHT: 400px; TEXT-ALIGN: center
+}
+.thumb1 {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-SIZE: 72pt; MARGIN-BOTTOM: 20px; BORDER-LEFT: medium none; WIDTH: 300px; COLOR: yellow; PADDING-TOP: 15px; BORDER-BOTTOM: medium none; HEIGHT: 60px; TEXT-ALIGN: center
+}
+.teststyle2 {
+	BORDER-RIGHT: red 5px solid; BORDER-TOP: red 5px solid; FONT-SIZE: 72pt; BACKGROUND: none transparent scroll repeat 0% 0%; LEFT: 30px; MARGIN-BOTTOM: 20px; BORDER-LEFT: red 5px solid; WIDTH: 400px; COLOR: blue; PADDING-TOP: 5px; BORDER-BOTTOM: red 5px solid; TOP: 120px; HEIGHT: 400px; TEXT-ALIGN: center
+}
+.thumb2 {
+	BORDER-RIGHT: red 5px solid; BORDER-TOP: red 5px solid; FONT-SIZE: 72pt; BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN-BOTTOM: 20px; BORDER-LEFT: red 5px solid; WIDTH: 300px; COLOR: blue; PADDING-TOP: 5px; BORDER-BOTTOM: red 5px solid; HEIGHT: 60px; TEXT-ALIGN: center
+}
+BODY {
+	FONT-SIZE: 80%; BACKGROUND: white; MARGIN: 0px; FONT-FAMILY: verdana
+}
+.bar {
+	BORDER-TOP: #99ccff 1px solid; BACKGROUND: #336699; WIDTH: 100%; BORDER-BOTTOM: #000000 1px solid; HEIGHT: 30px
+}
+.desbar {
+	PADDING-RIGHT: 10px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 10px; FONT-SIZE: 8pt; BACKGROUND: #ffffff; OVERFLOW-X: hidden; PADDING-BOTTOM: 10px; OVERFLOW: auto; WIDTH: 100%; COLOR: black; PADDING-TOP: 10px; BORDER-BOTTOM: #000000 1px solid; HEIGHT: 90px
+}
+.title {
+	PADDING-LEFT: 10px; FONT-SIZE: 15pt; COLOR: white
+}
+PRE {
+	MARGIN: 0px
+}
+A:link {
+	COLOR: white; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: white; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: white; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: yellow; TEXT-DECORATION: none
+}
+</style>
+<style type="text/css">PRE.clsCode {
+	FONT-SIZE: 110%
+}
+PRE.clsSyntax {
+	FONT-SIZE: 100%
+}
+TD DIV.clsBeta {
+	DISPLAY: none
+}
+MSHelp\:link {
+	CURSOR: hand; COLOR: #0000ff; TEXT-DECORATION: underline; hoverColor: #3366ff; filterString: 
+}
+</style>
+<meta content="MSHTML 6.00.2800.1458" name="GENERATOR">
+</head>
+
+<body id="Bdy" style="BACKGROUND: #336699; FONT-FAMILY: verdana" 
+onload="OnLoad()">
+
+<div class="bar title">
+	Compositor Filter </div>
+<div class="desbar">
+	Basic compositing effects used in video and image manipulation are available 
+	in IE 5.5 through this filter. <br>
+	<br>
+	Choose a compositor function from the following list to see how effects are 
+	applied to images, text, and other elements. </div>
+<!-- Test Controls -->
+<div id="TControls" 
+style="BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: white 1px solid; PADDING-LEFT: 10px; BACKGROUND: #cccccc; LEFT: 0px; PADDING-BOTTOM: 10px; BORDER-LEFT: white 1px solid; WIDTH: 100%; PADDING-TOP: 10px; BORDER-BOTTOM: black 1px solid; POSITION: absolute; TOP: 120px" 
+align="left">
+	<b>Compositor Function:</b> <br>
+	<div class="description">
+		<select id="funcsel" onchange="D1.filters.item(
+        'DXImageTransform.Microsoft.Compositor').Function = 
+        this.options(selectedIndex).value;">
+		<option value="0">0: Clear both sets of input.</option>
+		<option value="1">1: Show the minimum color from both sets of input.
+		</option>
+		<option value="2">2: Show the maximum color from both sets of input.
+		</option>
+		<option value="3">3: Show Input A only.</option>
+		<option value="4">4: Show Input A over Input B.</option>
+		<option value="5">5: Only show Input A inside the Input B render area.
+		</option>
+		<option value="6">6: Only show Input A outside the Input B render area.
+		</option>
+		<option value="7">7: Only show Input A and B inside Input B render area.
+		</option>
+		<option value="8">8: Show Input A minus Input B.</option>
+		<option value="9">9: Show Input A plus Input B.</option>
+		<option value="10">10: Show Input A and clear wherever the input intersects.
+		</option>
+		<option value="19">19: Show Input B only.</option>
+		<option value="20" selected>20: Show Input B over Input A.</option>
+		<option value="21">21: Only show Input B inside the Input A render area.
+		</option>
+		<option value="22">22: Only show Input B outside the Input A render area.
+		</option>
+		<option value="23">23: Only show Input A and B inside the Input A render 
+		area.</option>
+		<option value="24">24: Show Input B minus Input A.</option>
+		<option value="25">25: Show Input B plus Input A.</option>
+		</select> </div>
+</div>
+<!-- Test Area -->
+<div class="teststyle1" id="D1" 
+style="BORDER-RIGHT: black 3px solid; BORDER-TOP: black 3px solid; FILTER: progid:DXImageTransform.Microsoft.Compositor(function=20, duration=7); LEFT: 10px; BORDER-LEFT: black 3px solid; WIDTH: 365px; BORDER-BOTTOM: black 3px solid; POSITION: absolute; TOP: 192px; HEIGHT: 275px">
+	<div style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 13pt; BACKGROUND: black; LEFT: 0px; PADDING-BOTTOM: 5px; WIDTH: 100%; COLOR: white; PADDING-TOP: 5px; POSITION: absolute; TOP: 0px; HEIGHT: 30px">
+		Input A</div>
+	<div style="BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; BACKGROUND: blue; LEFT: 40px; BORDER-LEFT: black 2px solid; WIDTH: 80px; BORDER-BOTTOM: black 2px solid; POSITION: absolute; TOP: 50px; HEIGHT: 200px">
+	</div>
+	<div style="BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; BACKGROUND: red; LEFT: 140px; BORDER-LEFT: black 2px solid; WIDTH: 80px; BORDER-BOTTOM: black 2px solid; POSITION: absolute; TOP: 50px; HEIGHT: 200px">
+	</div>
+	<div style="BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; BACKGROUND: green; LEFT: 240px; BORDER-LEFT: black 2px solid; WIDTH: 80px; BORDER-BOTTOM: black 2px solid; POSITION: absolute; TOP: 50px; HEIGHT: 200px">
+	</div>
+</div>
+<script>
+
+function OnLoad()
+{
+   D1.filters.item(0).Apply();
+   D1.innerHTML = hiddendiv.innerHTML;
+   D1.filters.item(0).Play();
+}
+</script>
+<!-- End Test Area -->
+<div id="hiddendiv" style="DISPLAY: none">
+	<div style="BORDER-RIGHT: black 3px solid; BORDER-TOP: black 3px solid; FONT-SIZE: 32pt; BACKGROUND: #666666; LEFT: 20px; BORDER-LEFT: black 3px solid; WIDTH: 320px; COLOR: white; BORDER-BOTTOM: black 3px solid; POSITION: absolute; TOP: 80px; HEIGHT: 100px">
+		<div style="PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 13pt; BACKGROUND: black; LEFT: 0px; PADDING-BOTTOM: 5px; WIDTH: 100%; COLOR: white; PADDING-TOP: 5px; POSITION: absolute; TOP: 0px; HEIGHT: 30px">
+			Input B</div>
+		<img style="LEFT: 0px; POSITION: absolute; TOP: 30px" 
+  src="../../../../images/ms-86.gif">
+		<div style="FONT-WEIGHT: bold; FONT-SIZE: 30pt; LEFT: 0px; WIDTH: 100%; POSITION: absolute; TOP: 90px; TEXT-ALIGN: center">
+			THIS IS TEXT</div>
+	</div>
+</div>
+<div class="bar" 
+style="PADDING-RIGHT: 5px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; POSITION: absolute; TOP: 480px">
+	<MSHelp:link 
+tabIndex=0 keywords="msdn_copyright" 
+xmlns:MSHelp="http://msdn.microsoft.com/mshelp">© 2003 Microsoft Corporation. All 
+	rights reserved.</MSHelp:link>. </div>
+
+</body>
+
+</html>

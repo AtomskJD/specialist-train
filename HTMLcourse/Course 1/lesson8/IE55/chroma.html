@@ -1,0 +1,76 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Chroma Filter</title>
+<style type="text/css">
+	#filterDIV {
+		position:absolute; 
+		top:100px; 
+		left:10px; 
+		width:240px; 
+		height: 200px; 
+		background: #666666; 
+		padding:5px; 
+		font-size:15pt; 
+		border:3px solid black;
+		color:white; 
+		text-align:center; 
+		font-weight:bold; 
+		filter:progid:DXImageTransform.Microsoft.Chroma(Color='pink');
+	}
+	#filterDIV DIV { color: black }
+	.textDIV {
+		position:relative; 
+		top:15px; 
+		width:95%; 
+		height:20px; 
+		border:3px solid black; 
+		margin:5px;
+	}
+	#d1 {background-color:tomato}
+	#d2 {background-color:yellowgreen}
+	#d3 {background-color:gold}
+	#d4 {background-color:#99CCFF}	
+</style>
+
+<script type="text/javascript">
+	function removeColor(objList) {
+		var filterDIV = document.getElementById("filterDIV");
+		var color = objList.options[objList.selectedIndex].value;
+		filterDIV.filters[0].color = color;
+	}
+
+</script>
+</head>
+
+<body>
+<h1>Chroma Filter</h1>
+
+<div>
+	Какой цвет убрать:
+	<select onchange="removeColor(this)">
+		<option value="pink">Никакой</option>
+		<option value="black">black</option>
+		<option value="tomato">tomato</option>
+		<option value="yellowgreen">yellowgreen</option>
+		<option value="gold">gold</option>
+		<option value="#99CCFF">#99CCFF</option>
+		<option value="#666666">#666666</option>
+	</select>
+</div>
+
+
+<DIV ID="filterDIV"> 
+This text is white.
+<DIV ID="d1" class="textDIV">Tomato</DIV> 
+<DIV ID="d2" class="textDIV">YellowGreen</DIV> 
+<DIV ID="d3" class="textDIV">Gold</DIV> 
+<DIV ID="d4" class="textDIV">#99CCFF</DIV> 
+</DIV> 
+
+
+
+</body>
+
+</html>

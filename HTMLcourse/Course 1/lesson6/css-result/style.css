@@ -1,0 +1,29 @@
+body {
+	background: #EFE;
+}
+div.menu {
+	border: 1px solid black;
+	padding: 4px;
+}
+a.menu {
+	margin-right: 20px;
+}
+h3{
+	text-align: center;
+	border: 4px double green;
+	cursor: pointer;
+}
+div.text {
+	text-align: justify;
+	margin-bottom: 12px;
+}
+
+div#unique {
+	width: 80%;
+	/*  margin: auto;  */
+	margin: 4px 10% 4px 10%; 
+	border: 1px solid green;
+	text-indent: 2em;
+	text-align: justify;
+	padding: 8px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script language=JavaScript>
+<!--
+var message="Правая кнопка мыши отключена!"; // Здесь введите свою надпись, которая появится в окне предупреждения
+function click(e) {
+if (document.all) {
+if (event.button == 2) { // Чтобы отключить левую кнопку поставьте цифру 1
+alert(message);
+return false;
+}
+}
+if (document.layers) {
+if (e.which == 3) {
+alert(message);
+return false;
+}
+}
+}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+}
+document.onmousedown=click;
+// --> 
+</script>
+
+</head>
+<body>
+<h1>Java Script</h1>
+<script>
+document.write("Эта строка создана, с помощью JS. Посмотри на строку состояния через 2 секунды. Обнови страницу");
+setTimeout("window.status='Смотри строку состяния'", 2000);
+</script>
+<br><br>
+<a href="#" onClick="alert('Зачем нажали?')">Не нажимать</a>
+<br>
+<h1>Попробуйте сохранить этот рисунок с помощью правой кнопки мыши в разных браузерах</h1>
+<img src="watch.jpg" width="340" height="465">
+</body>
+</html>

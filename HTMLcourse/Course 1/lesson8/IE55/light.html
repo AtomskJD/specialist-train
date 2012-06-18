@@ -1,0 +1,42 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Light Filter</title>
+
+<STYLE type="text/css">
+   .aFilter {background-color: #FFFFFF; 
+            filter:light();
+            color: cyan;
+            width: 150px;
+            height:150px;
+            }
+</STYLE>
+
+<SCRIPT type="text/javascript">
+	window.onload=fnInit;
+	function fnInit(){
+	   var iX2=oDiv.offsetWidth;
+	   var iY2=oDiv.offsetHeight;
+	   oDiv.filters[0].addCone(0,0,1,iX2,iY2,255,0,0,20,180);
+}
+</SCRIPT>
+</head>
+
+<body>
+
+<h1>Light Filter</h1>
+
+<DIV CLASS="aFilter" ID="oDiv">
+	Этот объект "подсвечивается красной лампой.
+</DIV>
+
+<a href="http://msdn.microsoft.com/workshop/samples/author/dhtml/overview/filt_04.htm"
+	target="_blank">
+	Радар - красивый пример	
+</a>
+
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Mask Filter</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<STYLE>BODY {
+	FONT-SIZE: 70%; BACKGROUND: white; MARGIN: 0px; FONT-FAMILY: verdana
+}
+.bar {
+	BORDER-TOP: #99ccff 1px solid; BACKGROUND: #336699; WIDTH: 100%; BORDER-BOTTOM: #000000 1px solid; HEIGHT: 30px
+}
+.desbar {
+	PADDING-RIGHT: 10px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 10px; FONT-SIZE: 8pt; BACKGROUND: #ffffff; PADDING-BOTTOM: 10px; WIDTH: 100%; COLOR: black; PADDING-TOP: 10px; BORDER-BOTTOM: #000000 1px solid; HEIGHT: 105px
+}
+.title {
+	PADDING-LEFT: 10px; FONT-SIZE: 15pt; COLOR: white
+}
+PRE {
+	MARGIN: 0px
+}
+A:link {
+	COLOR: white; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: white; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: white; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: yellow; TEXT-DECORATION: none
+}
+.aFilter {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 45pt; FILTER: mask(color=tomato); BORDER-LEFT: black 1px solid; WIDTH: 150px; CURSOR: hand; COLOR: #99ccff; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: verdana
+}
+</STYLE>
+
+<SCRIPT>
+function maskOn(){
+
+	if(	addMaskBT.innerText == 'Add Mask Filter')
+	{
+		addMaskBT.innerText='Remove Mask Filter';
+		filterDIV.style.filter='progid:DXImageTransform.Microsoft.maskfilter()';
+		mColorHide.style.visibility='visible';
+		codeFilter.style.display='inline';	
+	}
+	else{
+		addMaskBT.innerText='Add Mask Filter';
+		filterDIV.style.filter='';
+		mColorHide.style.visibility='hidden';
+		codeFilter.style.display='none';	
+	}
+}
+function copy2Clipboard()
+{
+  // Copy displayed code to user's clipboard.
+  textRange = document.body.createTextRange();
+  textRange.moveToElementText(oCode);
+  textRange.execCommand("Copy");
+}
+</SCRIPT>
+<LINK href="ms-help://Hx/HxRuntime/HxLink.css" type=text/css rel=stylesheet>
+<STYLE type=text/css>PRE.clsCode {
+	FONT-SIZE: 110%
+}
+PRE.clsSyntax {
+	FONT-SIZE: 100%
+}
+TD DIV.clsBeta {
+	DISPLAY: none
+}
+MSHelp\:link {
+	CURSOR: hand; COLOR: #0000ff; TEXT-DECORATION: underline; hoverColor: #3366ff; filterString: 
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2800.1458" name=GENERATOR></HEAD>
+<BODY style="FONT-SIZE: 8pt; FONT-FAMILY: verdana">
+<DIV class="bar title">Mask Filter</DIV>
+<DIV 
+style="LEFT: 300px; WIDTH: 300px; POSITION: absolute; TOP: 45px; HEIGHT: 300px"><BUTTON 
+id=addMaskBT style="CURSOR: hand" onclick=maskOn();>Add Mask Filter</BUTTON> 
+<BR><BR>
+<DIV id=mColorHide style="VISIBILITY: hidden"><B>Choose a mask 
+color:&nbsp;&nbsp;</B> <BR><BR><SELECT 
+onchange="oColor.innerText=this.options[this.selectedIndex].value; filterDIV.filters.item('DXImageTransform.Microsoft.maskfilter').color=this.options[this.selectedIndex].value"> 
+  <OPTION value=black selected>Black</OPTION> <OPTION 
+  value=Tomato>Tomato</OPTION> <OPTION value=Yellowgreen>Yellowgreen</OPTION> 
+  <OPTION value=Gold>Gold</OPTION> <OPTION value=#99CCFF>#99CCFF</OPTION> 
+  <OPTION value=#666666>#666666</OPTION></SELECT></DIV><BR><BR><BR><BR></DIV>
+<DIV id=filterDIV 
+style="BORDER-RIGHT: black 3px solid; PADDING-RIGHT: 5px; BORDER-TOP: black 3px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 10pt; LEFT: 10px; PADDING-BOTTOM: 5px; BORDER-LEFT: black 3px solid; WIDTH: 240px; COLOR: black; PADDING-TOP: 5px; BORDER-BOTTOM: black 3px solid; POSITION: absolute; TOP: 40px; HEIGHT: 280px; TEXT-ALIGN: center"><FONT 
+size=2>
+<DIV 
+style="BORDER-RIGHT: black 3px solid; PADDING-RIGHT: 5px; BORDER-TOP: black 3px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 5px; BORDER-LEFT: black 3px solid; WIDTH: 95%; COLOR: black; PADDING-TOP: 5px; BORDER-BOTTOM: black 3px solid; POSITION: relative; TOP: 15px; HEIGHT: 20px">DIV 
+with a <BR>transparent background</DIV>
+<DIV 
+style="BORDER-RIGHT: black 3px solid; PADDING-RIGHT: 5px; BORDER-TOP: black 3px solid; PADDING-LEFT: 5px; BACKGROUND: gold; PADDING-BOTTOM: 5px; MARGIN: 5px; BORDER-LEFT: black 3px solid; WIDTH: 95%; COLOR: black; PADDING-TOP: 5px; BORDER-BOTTOM: black 3px solid; POSITION: relative; TOP: 15px; HEIGHT: 20px">DIV 
+with a <BR>background color</DIV>
+<DIV 
+style="BORDER-RIGHT: black 3px solid; PADDING-RIGHT: 5px; BORDER-TOP: black 3px solid; PADDING-LEFT: 5px; BACKGROUND: gold; FILTER: progid:DXImageTransform.Microsoft.Alpha( Opacity=100, FinishOpacity=0, Style=1, StartX=0,  FinishX=100, StartY=0, FinishY=0); PADDING-BOTTOM: 5px; MARGIN: 5px; BORDER-LEFT: black 3px solid; WIDTH: 95%; COLOR: black; PADDING-TOP: 5px; BORDER-BOTTOM: black 3px solid; POSITION: relative; TOP: 15px; HEIGHT: 20px">DIV 
+with a <BR>alpha filter</DIV><BR><IMG 
+src="../../../images/ms-94.gif"> 
+</FONT></DIV>
+<DIV class=bar style="Z-INDEX: 3; POSITION: relative; TOP: 330px"><BUTTON 
+style="MARGIN: 5px" onclick=copy2Clipboard()>Copy Code to Clipboard</BUTTON> 
+</DIV><!-- CODE LAYOUT --><PRE id=oCode style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 9pt; BACKGROUND: white; PADDING-BOTTOM: 10px; COLOR: black; PADDING-TOP: 10px; POSITION: relative; TOP: 340px">
+&lt;DIV ID="oFilterDIV" STYLE="position:absolute; top:50px; left:10px; width:240px; <BR>height:160px; padding:10px; font:bold 13pt verdana; <SPAN id=codeFilter style="DISPLAY: none; FONT-SIZE: 8pt; COLOR: red; FONT-FAMILY: verdana">filter:progid:DXImageTransform.Microsoft.maskfilter(Color='<SPAN id=oColor></SPAN>')</SPAN>"&gt;
+This is the DIV content.&lt;/DIV&gt;
+</PRE>
+<DIV></DIV>
+<DIV class=bar 
+style="PADDING-RIGHT: 5px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; POSITION: absolute; TOP: 485px"><MSHelp:link 
+tabIndex=0 keywords="msdn_copyright" 
+xmlns:MSHelp="http://msdn.microsoft.com/mshelp">© 2003 Microsoft Corporation. 
+All rights reserved.</MSHelp:link>. </DIV></BODY></HTML>

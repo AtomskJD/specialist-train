@@ -22,21 +22,7 @@
 	echo "<br>";
 	$day = 3;
 	echo date("d/m/y H:i:s", strtotime("+$day day", mkTime(0,0,0) ) );
-	$sqlCreate = "
-	CREATE TABLE currency_rate (
-		nid INTEGER(3) NOT NULL,
-		cid VARCHAR(3) NOT NULL,
-		units INTEGER NOT NULL DEFAULT 1,
-		currname VARCHAR(45) DEFAULT '',
-		rate NUMERIC(10,5) DEFAULT 0,
-		date TIMESTAMP NOT NULL,
-		primary key(cid, date)
-		)";
-	}
-	$db = sqlite_open('test.test');
-
-			createDB($db);
-			
-			
-			sqlite_close($db);
+	
 ?>
+<br />
+<?php date('Y-m-d')?>

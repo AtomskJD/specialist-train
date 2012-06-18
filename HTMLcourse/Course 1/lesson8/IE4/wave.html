@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Фильтр Wave</title>
+	<style>
+		div {font-size:36pt; width:250;height:36pt;color:blue;font-weight:bold}
+		.demo {filter:wave(add=0, freq=1, LightStrength=2, Phase=0, Strength=10)}
+		.effect1{
+			background-color:yellow;
+			color:navy;
+			filter:wave(add=0, freq=1, LightStrength=50, Phase=0, Strength=10);
+		}
+		.effect2{
+			background-color:white;
+			color:red;
+			filter:wave(add=1, freq=1, LightStrength=50, Phase=0, Strength=20);
+		}
+		.effect3{
+			background-color:white;
+			color:red;
+			filter:wave(add=0, freq=1, LightStrength=40, Phase=0, Strength=0);
+		}
+		.effect4{
+			background-color:white;
+			color:red;
+			filter:wave(add=10, freq=4, LightStrength=10, Phase=0, Strength=10);
+		}
+		.effect5{
+			color:red;
+			filter:wave(add=0, freq=2, LightStrength=150, Phase=0, Strength=0);
+		}
+	</style>
+</head>
+
+<body>
+<h1>Фильтр Wave</h1>
+<p>Фильтр Wave задает волнообразные искажения объекта</p>
+<div class="demo">OBJECT</div>
+
+<h3>Некоторые эффекты с этим фильтром</h3>
+<div class="effect1">OBJECT</div>
+<div class="effect2">OBJECT</div>
+<div class="effect3">OBJECT</div>
+<div class="effect4">OBJECT</div>
+<div class="effect5">OBJECT</div>
+</body>
+</html>

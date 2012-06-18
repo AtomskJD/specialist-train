@@ -1,0 +1,12 @@
+h3{
+	text-align: center;
+	font-family: Tahoma, Arial;
+}
+div {
+	text-indent: 4em;
+	text-align: justify;
+}
+div.menu, .reklama {
+	visibility: hidden;
+	position: absolute;
+}
