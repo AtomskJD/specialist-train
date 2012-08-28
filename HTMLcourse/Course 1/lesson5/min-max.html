@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+#out{
+    background: #69c;
+    padding:50px 0;
+    /*
+    min-width:800px;
+    max-width:1000px;*/
+    width:expression(
+        (document.documentElement.clientWidth || document.body.clientWidth) < 800? '800px' : 
+        (document.documentElement.clientWidth || document.body.clientWidth) >1000px? '1000px' : 'auto'
+    );
+}
+#in{
+    width:900px;
+    padding:50px 0;
+    background:#369;
+    border-radius:30px;
+}
+</style>
+<!--[if lte IE 6]>
+    TEXT TEST
+<![endif]-->
+</head>
+<body>
+    <div id="out">
+        <div id="in"></div>
+    </div>
+</body>
+</html>
